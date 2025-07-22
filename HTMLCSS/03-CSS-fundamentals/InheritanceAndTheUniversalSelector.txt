@@ -1,0 +1,55 @@
+Inherutance is a mechanism by which some styles some properties get their values inherited from parent element to child element
+
+/* body element is the parent element of all the other elements in HTML document so if we set certain properties in the body then their values will get inherited to all of thier child elements */
+
+Inherited styles are easily overwritten whenever there is any rule that applies for the same property
+
+body {
+  color: red;
+}
+
+!!! Important that every thing does not gets passed as inheritance to all of its childs, for example border property does NOT get inherited
+
+Not all properties get inherited. It's mostly ones related to text: font-family, font-size, font-weight, font-style, color, line-height, letter-spacing, text-align, text-transform, text-shadowm list-style, etc.
+
+body {
+  bprder-top: 10px solid #1098ac;
+}
+
+Overriding scenario
+
+body {
+  color: red;
+  font-size: 16px;
+}
+
+## Here color blue and font size 32px will be overwritten the inherited styles
+h1 {
+  color: blue;
+  font-size: 32px;
+}
+
+
+Some other situations where inheritance is useful
+
+nav a:link,
+nav strong {
+  font-size: 18px
+}
+
+instead we can do such that strong can directly get font-size from its parent i.e. nav
+nav {
+  font-size: 18px;
+}
+
+Another way of adding some styles to all of the elements
+
+universal sellector simply selects every single elements on the page. This is usefull if we actually want a certain property applied to all elements but which does not get inherited
+
+here we can apply border property
+
+Universal selector has the lowest priority so someone can easily override it
+
+* {
+  border-top: 10px solid #1098ac;
+}

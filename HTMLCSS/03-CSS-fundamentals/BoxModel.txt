@@ -1,0 +1,17 @@
+The Box Model defines how elements are displayed on a webpage and how they are sized
+Content: Text, images, etc. and also we can specify the hight and width of the content area
+Border: A line around the element, still inside of the element
+Padding: Invisible space around the content, inside of the element
+Margin: Space outside of the element, between elements
+
+Content, border and padding: Visible part of element on the page
+
+Fill area: Area that gets filled with background color or background image
+whenever we apply background image or background color it will occupy the visible area i.e. content, border and padding
+
+
+Final element width = left border + left padding + width + right padding + right border
+Final element height = top border + top padding + height + bottom padding + bottom border
+
+We can specify all these values using CSS properties
+This is the default behaviour, but we can change it

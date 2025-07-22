@@ -1,0 +1,43 @@
+## Conflicting Selectors and Declaration
+
+## Inline css
+<p id="author-text" class="author">
+  Posted by Laura Jones on Monday, June 21st 2027
+</p>
+
+## In css file
+.author {
+  fonr-style: Italic;
+  font-size: 10px;
+}
+
+#author-text {
+  font-size: 20px;
+}
+
+p,
+li {
+  font-family: sans-serif;
+  color: #444444
+  font-size: 22px;
+}
+
+There are multiple selectors selecting the same element. Which one of them applies?
+All of them. All the rules and properties are applied!
+
+But there are conflicting font-size declarations! is it 18px, or 20px, or 22px?
+
+Highest priority to lowest priority
+
+Declaration marked "!important"
+Inlinre style(style attribute in HTML)
+ID(#) selector, for multiple ID selectors last selector in code applies
+Class(.) or pseudo-class(:) selector, same like ID in case of multiple Class selector
+Element selector(p, div, li, etc.), same like ID and Class in case of multiple
+Universal selector(*)
+
+There is an ID selector (#author-text), so for the conflicting font-size property, this is the selector that applies
+
+
+## Specificity tells priority
+(1, 0, 0) has more priority then (0, 1, 0)

@@ -1,3 +1,12 @@
+/* body element is the parent element of all the other elements in HTML document so if we set certain properties in the body then their values will get inherited to all of thier child elements */
+
+/* Inherited styles are easily overwritten whenever there is any rule that applies for the same property */
+
+body {
+  color: #444;
+  font-family: sans-serif;
+}
+
 /* Combining Selectors */
 h1,
 h2,
@@ -173,3 +182,22 @@ a:active {
   background-color: black;
   font-style: italic;
 }
+
+/* Resolving conflicts */
+
+/* here # has the highest  */
+/* #copyright {
+  color: red;
+}
+
+.copyright {
+  color: blue;
+}
+
+.text {
+  color: yellow;
+}
+
+footer p {
+  color: green;
+} */
