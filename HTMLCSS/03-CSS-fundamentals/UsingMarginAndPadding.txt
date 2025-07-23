@@ -1,0 +1,34 @@
+xyz {
+  padding-left: 40px;
+  padding-right:40px;
+  ## shorthand (top-bottom) (left-right)
+  padding: 20px 40px;
+  margin-bottom:10px
+}
+
+## If we want no margin in the last li item after giving margin to all li items
+li:last-child {
+  margin-bottom: 0;
+}
+
+## Global Reset (Reset all default margins and paddings and set them to 0)
+
+if apply on body element it only set to body element as margin is not the property that is related to text which gets inherited to its chlid elements
+body {
+  margin:0;
+}
+
+## Instead if we want the margin to be applied to every single element then use universal selector
+* {
+  margin:0;
+  padding:0;
+}
+
+Global reset can remove the bullet and numbered points s we have to give some space at the left side to show them for example margin-left:50px
+
+## Margins betwenn elements gets overlapped i.e. collapsing margins bigger element's margin overlapps the smaller margin
+
+## Quick Recap
+1.Whenever need space inside an element which is very useful when there is a backgroung color or a border on the element then always use padding
+2. To create space outside the element or to create space between multiple elements always use margin
+3. In case we need to add vertical space then most of the time stick to margin-bottom
