@@ -1,0 +1,14 @@
+Child element can never be wider than the parent element
+
+.container {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+## Shorthand
+margin: 0 auto;
+
+## here margin auto means that the margin on the left needs to be same then the margin on the right side. They should both be calculated automatically by the browser
+
+So the container will look centered inside of the body or inside of the browser
