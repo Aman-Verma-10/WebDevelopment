@@ -1,0 +1,1 @@
+In inline elements top and bottom margins do not apply like <a></a> so can change inline to inline-block then apply top, bottom margin

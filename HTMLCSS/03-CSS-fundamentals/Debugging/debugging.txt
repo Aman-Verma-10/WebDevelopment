@@ -1,0 +1,15 @@
+1. Use validator.v3.org to check the error in css file
+
+2. To comare two codes: Diffchecker.com
+
+####### If one selector is way more complex than the other, then many times it's actually the more complex one that gets applied. That's why avoid writing the complex selector and keep selector simple, that will than avoid creating bugs.
+
+For example:
+nav a:link {
+
+}
+
+And not:
+.main-header nav a:link {
+
+}
