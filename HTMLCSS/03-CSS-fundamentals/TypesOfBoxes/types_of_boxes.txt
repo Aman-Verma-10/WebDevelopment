@@ -1,0 +1,27 @@
+Block level boxes: Occupy all the space that they can and create line break after them, they can not be side by side with each other
+1. Elements are formatted visually as blocks
+2. Elements occupy 100% of parent element's width, no matter the content
+3. Elements are stacked vertically by default, one after another
+4. The box-model applies as showed earlier
+
+Default elements: body, main, header, footer, section, nav, aside, div, h1-h6, p, ul, ol, li, etc.
+With CSS: display: block
+
+
+Inline boxes: Only occupy exactly the space that they need for its content
+1. Occupies only space necessary for its content
+2. Causes no line-break after or before the element
+3. Box model applies in a different way: heights and widths do not apply
+Paddings and margins are applied only horizontally(left and right)
+
+Default elements: a, img, strong, em, button, etc.
+With CSS: display: inline
+Although img element do behanve as inline-block element
+
+Inline Block Boxes: 1. Looks like inline from the outside, behaves like block-level on the inside
+2. Occupies only content's space
+3. Cause no line-breaks
+4. Box-model applies as showed
+display: inline-block
+
+
