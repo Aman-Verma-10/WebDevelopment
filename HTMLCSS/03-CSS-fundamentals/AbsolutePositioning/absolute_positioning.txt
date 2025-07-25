@@ -1,0 +1,31 @@
+Normal flow:
+1. Default positioning
+2. Element is "in flow"
+3. Elements are simply laid put according to their order in the HTML code
+
+Default positioning: poition: relative
+
+Absolute Positioning: Allows us to absolute position elements anywhere on the page
+1. Element is removed from the normal flow: "out of flow"
+2. No impact on surrounding elements, might overlap them
+3. We use top, buttom, left, or right to offset the element from its relatively positioned container
+
+position: absolute
+
+in index.html we will create a "like button" taht is located outside of centered(article) container
+
+
+bottom: 0; bottom with respect to viewport because absolute positioning is needs to be in relation to something
+by default in button {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+50px is in relation to the viewport i.e. the visible part of the page in the browser
+### Usually we want to absolute the position of the element in relation to some other parent element and in order to do that we need to specifically set the position of that parent elemnt to relative
+
