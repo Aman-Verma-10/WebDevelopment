@@ -1,0 +1,19 @@
+.author-img {
+  float: left;
+}
+
+now the image is basically is going to be taken out of the document flow just like an absolute positioned element
+
+The difference with float is that then all the other elements will float around it.
+
+If all the child element floated then parent element content height becomes zero apart from if any padding or border is given. It will look like as the element is removed. So if we put padding to zero or remove top and buttom height then this phenomena is called as "collapsing element" and when this happen we say that the element's height has collapsed. As all children of parent element are now floated and they are now not on the page anymore.
+
+
+
+Floats:
+1. Element id removed rom the normal flow: "out of flow"
+2. Text and inline elements will wrap around the floated element
+3. The container will not adjust its height to the floated element
+
+float:left;
+float:right;
