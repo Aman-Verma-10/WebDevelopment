@@ -1,0 +1,18 @@
+One way to clear float is just add one empty element
+
+index.html: <div class="clear"></div>
+
+style.css:
+.clear {
+  clear: both;
+}
+
+One trick to solve float problem called "clearfix heck"
+
+instead of adding a empty element just add one calss="clearfix" to the collapsed height elementpseudo elements i.e. after and before by default are inline element and clearing floats like this trick works on bloack level elements
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
